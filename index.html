@@ -79,7 +79,7 @@
 <div id="overlay">
   <div class="big">💖</div>
   <p id="intro"></p>
-  <button id="startBtn">Ftah 💖</button>
+  <button id="startBtn">7OLIIII</button>
 </div>
 
 <audio id="music" loop preload="auto"></audio>
@@ -114,7 +114,7 @@ const NAME = (params.get("name") || CONFIG.name).slice(0, 40);
 const $ = id => document.getElementById(id);
 $("name").textContent = NAME;
 $("msg").textContent = CONFIG.message;
-$("intro").textContent = "Chi 7aja khassa b " + NAME;
+$("intro").textContent = "9ARDOUCHHA🙂" + NAME;
 document.title = NAME + " 💖";
 
 const cv = $("c"), ctx = cv.getContext("2d");
@@ -303,40 +303,6 @@ addEventListener("pointerdown", e => {
 });
 </script>
 </body>
-  <audio id="myMusic" src="music.m4a"></audio>
-
-<button id="musicBtn" style="
-position:fixed;
-bottom:25px;
-right:25px;
-z-index:9999;
-padding:12px 20px;
-border:none;
-border-radius:25px;
-background:#ffb6c1;
-color:#fff;
-font-size:16px;
-cursor:pointer;">
-🎵 Play
-</button>
-
-<script>
-const audio = document.getElementById("myMusic");
-const btn = document.getElementById("musicBtn");
-
-btn.onclick = async () => {
-  if (audio.paused) {
-    try {
-      await audio.play();
-      btn.textContent = "⏸ Pause";
-    } catch (error) {
-      alert("Music could not play!");
-    }
-  } else {
-    audio.pause();
-    btn.textContent = "🎵 Play";
-  }
-};
 </script>
 </body>
 </html>
