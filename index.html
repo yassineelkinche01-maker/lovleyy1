@@ -114,8 +114,8 @@ const NAME = (params.get("name") || CONFIG.name).slice(0, 40);
 const $ = id => document.getElementById(id);
 $("name").textContent = NAME;
 $("msg").textContent = CONFIG.message;
-$("intro").textContent = "9ARDOUCHHA🙂" + NAME;
-document.title = NAME + " 💖";
+$("intro").textContent = "9ARDOUCHHA🙂";
+document.title = NAME + "💖";
 
 const cv = $("c"), ctx = cv.getContext("2d");
 const rand = (a, b) => a + Math.random() * (b - a);
